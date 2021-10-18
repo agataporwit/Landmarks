@@ -8,10 +8,14 @@
 import SwiftUI
 //mainattribute identifies the app’s entry point.
 @main
-struct LandmarksApp: App {
+    struct LandmarksApp: App {
+        @StateObject private var modelData = ModelData()
+        
+        
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(modelData)
         }
     }
 }
