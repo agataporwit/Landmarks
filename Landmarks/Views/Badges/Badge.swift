@@ -1,10 +1,9 @@
 //
-//  Badge.swift
+//  Landmark.swift
 //  Landmarks
 //
-//  Created by Agata Porwit on 10/18/21.
+//  Created by Agata Porwit on 10/14/21.
 //
-
 import SwiftUI
 
 struct Badge: View {

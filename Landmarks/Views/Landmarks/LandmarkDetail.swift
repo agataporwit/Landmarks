@@ -1,8 +1,8 @@
 //
-//  LandmarkDetail.swift
+//  Landmark.swift
 //  Landmarks
 //
-//  Created by Agata Porwit on 10/15/21.
+//  Created by Agata Porwit on 10/14/21.
 //
 
 import SwiftUI
@@ -12,10 +12,9 @@ struct LandmarkDetail: View {
     var landmark: Landmark
 
     var landmarkIndex: Int {
-        modelData.landmarks.firstIndex(where: { $0.id == landmark.id})!
+        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
-    
-    
+
     var body: some View {
         ScrollView {
             MapView(coordinate: landmark.locationCoordinate)
@@ -30,7 +29,6 @@ struct LandmarkDetail: View {
                 HStack {
                     Text(landmark.name)
                         .font(.title)
-                        .foregroundColor(.primary)
                     FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
                 }
 
@@ -57,10 +55,9 @@ struct LandmarkDetail: View {
 
 struct LandmarkDetail_Previews: PreviewProvider {
     static let modelData = ModelData()
-    
+
     static var previews: some View {
         LandmarkDetail(landmark: modelData.landmarks[0])
             .environmentObject(modelData)
     }
 }
-//SwiftUI Essentials Building Lists and Navigation

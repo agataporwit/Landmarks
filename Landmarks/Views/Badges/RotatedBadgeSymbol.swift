@@ -1,17 +1,16 @@
 //
-//  RotatedBadgeSymbol.swift
+//  Landmark.swift
 //  Landmarks
 //
-//  Created by Agata Porwit on 10/18/21.
+//  Created by Agata Porwit on 10/14/21.
 //
 
 import SwiftUI
 
 struct RotatedBadgeSymbol: View {
     let angle: Angle
-    
-    var body: some View
-    {
+
+    var body: some View {
         BadgeSymbol()
             .padding(-60)
             .rotationEffect(angle, anchor: .bottom)

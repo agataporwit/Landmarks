@@ -1,13 +1,11 @@
 //
-//  LandmarkList.swift
+//  Landmark.swift
 //  Landmarks
 //
 //  Created by Agata Porwit on 10/14/21.
 //
 
-import Foundation
 import SwiftUI
-
 
 struct LandmarkList: View {
     @EnvironmentObject var modelData: ModelData

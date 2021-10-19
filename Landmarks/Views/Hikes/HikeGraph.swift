@@ -1,9 +1,9 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-The elevation, heart rate, and pace of a hike plotted on a graph.
-*/
+//
+//  Landmark.swift
+//  Landmarks
+//
+//  Created by Agata Porwit on 10/14/21.
+//
 
 import SwiftUI
 

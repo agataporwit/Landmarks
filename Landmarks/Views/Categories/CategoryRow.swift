@@ -1,11 +1,10 @@
 //
-//  CategoryRow.swift
+//  Landmark.swift
 //  Landmarks
 //
-//  Created by Agata Porwit on 10/18/21.
+//  Created by Agata Porwit on 10/14/21.
 //
 
-import Foundation
 import SwiftUI
 
 struct CategoryRow: View {
@@ -14,14 +13,14 @@ struct CategoryRow: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text(categoryName)
+            Text(self.categoryName)
                 .font(.headline)
                 .padding(.leading, 15)
                 .padding(.top, 5)
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
-                    ForEach(items) { landmark in
+                    ForEach(self.items) { landmark in
                         NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
                             CategoryItem(landmark: landmark)
                         }
