@@ -33,6 +33,9 @@
 		0771B166271E1B1000E7D93E /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771B162271E1B1000E7D93E /* HikeGraph.swift */; };
 		0771B167271E1B1000E7D93E /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771B163271E1B1000E7D93E /* HikeDetail.swift */; };
 		0771B168271E1B1000E7D93E /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771B164271E1B1000E7D93E /* HikeView.swift */; };
+		0771B16B271E426500E7D93E /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771B16A271E426500E7D93E /* CategoryHome.swift */; };
+		0771B16D271E46E900E7D93E /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771B16C271E46E900E7D93E /* CategoryRow.swift */; };
+		0771B16F271E479700E7D93E /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771B16E271E479700E7D93E /* CategoryItem.swift */; };
 		07D04821271A509400AA1A10 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D04820271A509400AA1A10 /* LandmarkDetail.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +86,9 @@
 		0771B162271E1B1000E7D93E /* HikeGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
 		0771B163271E1B1000E7D93E /* HikeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		0771B164271E1B1000E7D93E /* HikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
+		0771B16A271E426500E7D93E /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
+		0771B16C271E46E900E7D93E /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		0771B16E271E479700E7D93E /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		07D04820271A509400AA1A10 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +178,7 @@
 		070F543D2718EA670092D9AD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0771B169271E423B00E7D93E /* Categories */,
 				0771B160271E1B1000E7D93E /* Hikes */,
 				0771B15B271E154F00E7D93E /* Landmarks */,
 				0771B14F271E006A00E7D93E /* Helpers */,
@@ -241,6 +248,16 @@
 				0771B164271E1B1000E7D93E /* HikeView.swift */,
 			);
 			path = Hikes;
+			sourceTree = "<group>";
+		};
+		0771B169271E423B00E7D93E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0771B16A271E426500E7D93E /* CategoryHome.swift */,
+				0771B16C271E46E900E7D93E /* CategoryRow.swift */,
+				0771B16E271E479700E7D93E /* CategoryItem.swift */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,13 +392,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0771B16D271E46E900E7D93E /* CategoryRow.swift in Sources */,
 				070F540C2718D9890092D9AD /* ContentView.swift in Sources */,
+				0771B16B271E426500E7D93E /* CategoryHome.swift in Sources */,
 				0771B166271E1B1000E7D93E /* HikeGraph.swift in Sources */,
 				0771B159271E0FE200E7D93E /* Badge.swift in Sources */,
 				070F54362718DFA00092D9AD /* MapView.swift in Sources */,
 				0771B165271E1B1000E7D93E /* GraphCapsule.swift in Sources */,
 				070F540A2718D9890092D9AD /* LandmarksApp.swift in Sources */,
 				0771B14E271DFF3F00E7D93E /* FavoriteButton.swift in Sources */,
+				0771B16F271E479700E7D93E /* CategoryItem.swift in Sources */,
 				0771B167271E1B1000E7D93E /* HikeDetail.swift in Sources */,
 				0771B151271E069E00E7D93E /* HexagonParameters.swift in Sources */,
 				0771B15F271E18B700E7D93E /* Hike.swift in Sources */,
